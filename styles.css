@@ -1,0 +1,45 @@
+*{
+	font-size: 1rem;
+	font-family: sans-serif;
+	padding:0px;
+	margin:0px;
+	background-color: rgb(240,240,230);
+}
+
+
+
+h1{
+	padding-left: 5rem;
+	margin-bottom: 2rem;
+	background-color: #A8216B;
+	font-size: 1.5rem;
+	vertical-align: middle;
+	line-height: 90px;    
+	color: rgb(240,240,230);
+}
+
+
+.title{
+	margin-top: 2rem;
+	padding-left: 5rem;
+	font-weight: bold;
+	line-height: 1.5rem;    
+	cursor: pointer;
+	color: rgb(80,80,80);
+}
+
+.description{
+	padding-left: 5rem;
+	line-height: 1.5rem;    
+	color: rgb(80,80,80);
+
+}
+
+.item{
+	width:80%;
+	margin-bottom: 2rem; 
+}
+
+a{
+	text-decoration: none;
+}
