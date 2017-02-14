@@ -18,6 +18,7 @@ var positions = [
 		'r' : 4
 	}
 ]
+
 var canvas = d3.select("#canvas")
 var deltaSum = 0
 

@@ -1,11 +1,32 @@
 .blobs {
   -webkit-filter: url("#goo");
   filter: url("#goo");
-  width: 300px;
-  height: 200px;
-  }
+  position: relative;
+/*    top: 10rem;
+    left: 0;
+    bottom: 0;
+    right: 0;  
+*/
+}
 
 @-webkit-keyframes blob-left {
+  0% {
+    -webkit-transform: scale(1.1) translate(0, 0);
+            transform: scale(1.1) translate(0, 0);
+  }
+  50% {
+    -webkit-transform: scale(0.4) translate(-65px, 0);
+            transform: scale(0.4) translate(-65px, 0);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1) translate(0, 0);
+            transform: scale(1.1) translate(0, 0);
+  }
+
+}
+
+@keyframes blob-left {
   0% {
     -webkit-transform: scale(1.1) translate(0, 0);
             transform: scale(1.1) translate(0, 0);
@@ -38,6 +59,20 @@
   }
 }
 
+@keyframes blob-right {
+  0% {
+    -webkit-transform: scale(1.3) translate(0, 0);
+            transform: scale(1.3) translate(0, 0);
+  }
+  50% {
+    -webkit-transform: scale(0.9) translate(65px, 0);
+            transform: scale(0.9) translate(65px, 0);
+  }
+  100% {
+    -webkit-transform: scale(1.3) translate(0, 0);
+            transform: scale(1.3) translate(0, 0);
+  }
+}
 
 
 .blob {
@@ -55,7 +90,9 @@
   margin-top: -50px;
   margin-left: -50px;
   -webkit-animation: blob-right cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
+  animation: blob-right cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
 }
 .blob:nth-child(2) {
   -webkit-animation-name: blob-left;
+  animation-name: blob-left;
 }

@@ -16,18 +16,24 @@
 			  <div class="blob">right</div>
 			  <div class="blob">left</div>
 			</div>
+<!-- 
+			<div class="blobs">
+			<svg width='300px' class="blobs" height='300px' viewbox="0 0 100 100">
+			  <circle class="blob" cx=50 cy=50 r=10></circle>
+			  <circle class="blob" cx=50 cy=50 r=10></circle>
+			</svg>
+		</div>
+ -->
 
 			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
 			  <defs>
 			    <filter id="goo">
-			      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+			      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
 			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
 			      <feBlend in="SourceGraphic" in2="goo" />
 			  	</filter>
 			  </defs>
 			</svg>
-
-
 		</div>
 
 	</body>
