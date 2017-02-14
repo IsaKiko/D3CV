@@ -35,7 +35,7 @@ function update(){
 		.attr('cx', function(d){ return d.x})
 		.attr('cy', function(d) {return d.y})
 		.attr('r', function(d) {return 5})
-		.style('fill', color)
+		.attr('fill', color)
 		// .on("mouseover", function(){console.log("HAPPY VALENTINE'S DAY <3")})
 		.on("mouseover", function(){
 			if(toggle == 1) {message.style('visibility', 'visible')}
@@ -46,7 +46,7 @@ function update(){
 		.attr('cx', function(d){ return d.x})
 		.attr('cy', function(d) {return d.y})
 		.attr('r', function(d) {return 5})
-		.style('fill', color)
+		.attr('fill', color)
 	}
 
 var button = document.getElementById('button')
