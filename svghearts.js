@@ -61,7 +61,13 @@ function dataswap(){
 		update();
 	}
 	else {
-		data = datarand.map(function(d) {return d});
+		for (var i = 0; i < datain[0].x.length; ++i){
+			data[i]={
+			x: Math.random() * (max - min) + min,
+			y: Math.random() * (max - min) + min,
+			key: i
+			}			
+		}
 		toggle = 0;
 		color='black'
 		update();
