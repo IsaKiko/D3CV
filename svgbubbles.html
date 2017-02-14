@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>SVG Bubbles</title>
+		<title>Happy Valentin's Day</title>
 		<link rel="stylesheet" type="text/css" href="svgblobs.css">
 
 	</head>
@@ -13,10 +13,12 @@
 			<button id='button' style='padding:20px; background-color:#C52A42; color:rgb(240,240,230); font-family:sans-serif; border:none; margin:0 auto; font-weight:bold; width:100%; font-size:1.5rem;' > click me </button>
 		</div>
 
-	<div>
+		<div>
+
+
 		<div class="blobs" >
-		<svg  style='margin-top:100px'id ='canvas' width='100%' class="blobs" height='300px' viewbox="0 0 100 100">
-		</svg>
+			<svg  style='margin-top:100px'id ='canvas' width='100%' class="blobs" height='300px' viewbox="0 0 100 100">
+			</svg>
 		</div>
 
 
@@ -29,7 +31,7 @@
 	    <filter id="goo">
 	      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
 	      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-	      <!-- <feBlend in="SourceGraphic" in2="goo" /> -->
+	      <feBlend in="SourceGraphic" in2="goo" />
 	  	</filter>
 	  </defs>
 	</svg>
